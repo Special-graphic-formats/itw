@@ -41,7 +41,7 @@ void decode(struct bits *bits, float *values, int length)
 int main(int argc, char **argv)
 {
 	if (argc != 3) {
-		fprintf(stderr, "usage: %s input.dwt output.ppm\n", argv[0]);
+		fprintf(stderr, "usage: %s input.itw output.ppm\n", argv[0]);
 		return 1;
 	}
 	struct bits *bits = bits_reader(argv[1]);

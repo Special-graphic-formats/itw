@@ -82,7 +82,7 @@ void encode(struct bits *bits, float *values, int length)
 int main(int argc, char **argv)
 {
 	if (argc != 3 && argc != 6 && argc != 7 && argc != 8) {
-		fprintf(stderr, "usage: %s input.ppm output.img [Q0 Q1 Q2] [WAVELET] [ROUNDING]\n", argv[0]);
+		fprintf(stderr, "usage: %s input.ppm output.itw [Q0 Q1 Q2] [WAVELET] [ROUNDING]\n", argv[0]);
 		return 1;
 	}
 	struct image *image = read_ppm(argv[1]);
